@@ -5,11 +5,8 @@ const stuRoutes = require("./routes/stuRoute")
 const bodyparser = require('body-parser')
 
 
-
-
-
-
-mongoose.connect("mongodb://127.0.0.1:27017/student")
+mongoose.connect("mongodb://127.0.0.1:27017/students")
+// mongoose.connect("mongodb://localhost/students")
 
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
