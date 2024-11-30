@@ -6,8 +6,8 @@ const Search=()=>{
     const [mydata, setMydata] = useState([]);
 
     const handleSubmit=()=>{
-        let api="http://localhost:8080/students/datadisplay";
-        axios.post(api, {rollno:rno}).then((res)=>{
+        let api=  "http://localhost:8080/students/datasearch";
+         axios.post(api, {rollno:rno}).then((res)=>{
                 setMydata(res.data);
                 console.log(res.data)
         })
@@ -34,8 +34,8 @@ const Search=()=>{
         Enter Rollno: <input type="text" value={rno} onChange={(e)=>{setRno(e.target.value)}}/>
         <button onClick={handleSubmit}>Search</button>
         <hr />
-        <table>
-            <tr>
+        <table border="1" style={{backgroundColor:"aqua", color:"black", width:"1000px", textAlign:"center"}}>
+        <tr style={{color:"black", fontSize:"20px", backgroundColor:"red"}}>
                 <th>Roll no</th>
                 <th>Name</th>
                 <th>City</th>

@@ -5,7 +5,7 @@ const stuController= require("../controllers/studentController");
 
 route.post("/datasave", stuController.dataSave);
 route.get("/datadisplay", stuController.dataDisplay);
-route.post("/datadisplay", stuController.dataSearch);
+route.post("/datasearch", stuController.dataSearch);
 route.get("/deletedisplay", stuController.deleteDataDisplay);
 route.post("/recordDelete", stuController.recordDelete);
 

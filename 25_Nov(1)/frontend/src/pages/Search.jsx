@@ -34,8 +34,8 @@ const Search=()=>{
         Enter Rollno: <input type="text" value={rno} onChange={(e)=>{setRno(e.target.value)}}/>
         <button onClick={handleSubmit}>Search</button>
         <hr />
-        <table>
-            <tr>
+        <table border="1" style={{backgroundColor:"aqua", color:"black", width:"1000px", textAlign:"center"}}>
+                    <tr style={{color:"black", fontSize:"20px", backgroundColor:"red"}}>
                 <th>Roll no</th>
                 <th>Name</th>
                 <th>City</th>
