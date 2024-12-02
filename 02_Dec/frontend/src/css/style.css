@@ -1,0 +1,17 @@
+
+
+#headerData
+{
+  text-align:  right;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+
+#myFooter
+{
+    background-color: lightgray;
+    height: 100px;
+    padding: 30px;
+    margin-top: 50px;
+}

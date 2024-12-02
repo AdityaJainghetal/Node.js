@@ -1,0 +1,13 @@
+#headerData{
+    text-align: right;
+    font-size: 30px;
+    padding-right: 30px;
+    
+    
+}
+
+#Footer{
+    background-color: lightgray;
+    height: 100px;
+    padding: 30px;
+}
