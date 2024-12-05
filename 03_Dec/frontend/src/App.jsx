@@ -18,16 +18,18 @@ const App=()=>{
               <Route path="registration" element={<Registration/>}/>
              
             </Route>
-          </Routes>
-
-            <Routes>
               
-              <Route path="dashboard" element={<Dashboard/>}/>
+              <Route  path="dashboard" element={<Dashboard/>}>
+              <Route index element={<AdminHome/>}/>
               <Route path="adminhome" element={<AdminHome/>}/>
               <Route path="adminabout" element={<AdminAbout/>}/>
+              </Route>
+              
 
-            </Routes>
 
+          </Routes>
+
+           
 
 
 
