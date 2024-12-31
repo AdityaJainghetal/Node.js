@@ -1,6 +1,3 @@
-
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import axios from "axios";
 import {message} from "antd";
@@ -25,30 +22,36 @@ const Registration=()=>{
 
   return(
     <>
-      <h1> User Registration</h1>
-      
+   
 
-      <Form style={{width:"50%", border:"2px solid black", marginLeft:"350px", padding:"30px", borderRadius:"10px" , textAlign:"center", background:"whitesmoke",fontSize: "20px",fontWeight:"600"}}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter name</Form.Label>
-        <Form.Control type="text" name="name" value={input.name} onChange={handleInput}  />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter mobile</Form.Label>
-        <Form.Control type="text"  name="mobile" value={input.mobile} onChange={handleInput}  />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Email</Form.Label>
-        <Form.Control type="email"  name="email" value={input.email} onChange={handleInput}  /> 
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter password</Form.Label>
-        <Form.Control type="password"  name="password" value={input.password} onChange={handleInput}  />
-      </Form.Group>
-      <Button variant="primary" type="submit" onClick={handleSubmit}>
-        Submit
-      </Button>
-    </Form>
+    <div style={{paddingTop:"5px",display:"flex" ,flexDirection:"column",alignItems:"center",  border:"2px solid black",backgroundColor:"whitesmoke", borderRadius:"5px"}}>
+      <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+        <label style={{fontSize:"20px"}}>Enter your name</label>
+        <input type="text" style={{width:"300px", borderRadius:"5px"}} value={input.email} onChange={handleInput}/>
+      </div>
+      <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+        <label style={{fontSize:"20px"}}>Enter mobile number</label>
+        <input type="number" style={{width:"300px", borderRadius:"5px"}} value={input.email} onChange={handleInput}/>
+      </div>
+      <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+        <label style={{fontSize:"20px"}}>Enter your email</label>
+        <input type="email" style={{width:"300px", borderRadius:"5px"}} value={input.email} onChange={handleInput}/>
+      </div>
+      <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+        <label style={{fontSize:"20px"}}>Enter your password</label>
+        <input type="password" style={{width:"300px", borderRadius:"5px"}} value={input.email} onChange={handleInput}/>
+      </div>
+
+      <br />
+      
+      <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+      <button onClick={handleSubmit}>Submit</button>
+      </div>
+
+    </div>
+
+
+
 
     
     </>

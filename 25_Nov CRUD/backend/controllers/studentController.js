@@ -4,7 +4,7 @@ const StuModel=require("../models/studentModels");
 const dataSave=async(req, res)=>{
 const {rollno, name, city, fees}= req.body;
 
-const data=await StuModel.create({
+    ({
     rollno:rollno,
     name:name,
     city:city,

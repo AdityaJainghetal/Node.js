@@ -19,7 +19,7 @@ const userSave=async(req, res)=>{
 }
 const userCheck=async(req, res)=>{
  const {email, password}= req.body; 
-  const User= await UserModel.find({email:email});
+  const User= await UserModel.find({email});
   console.log(User);
     if (User.length>=1)
     {     
