@@ -6,7 +6,7 @@ const Search=()=>{
     const [mydata, setMydata] = useState([]);
 
     const handleSubmit=()=>{
-        let api="http://localhost:8080/students/datadisplay";
+        let api="http://localhost:8080/students/datasearch";
         axios.post(api, {rollno:rno}).then((res)=>{
                 setMydata(res.data);
                 console.log(res.data)
