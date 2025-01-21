@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
 
-mongoose.connect("mongodb+srv://adityajainghetal:<kyn3m1kgXutowhoz>@cluster0.idrso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
+mongoose.connect("mongodb+srv://adityajainghetal:Adityajain@cluster0.b5i0n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
   console.log("DB connected!!!");
 })
 

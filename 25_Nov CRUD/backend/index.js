@@ -29,7 +29,7 @@ app.listen(8080, ()=>{
 //npm i mongoose
 //npm i body-parser
 //npm i cors
-
+//npm i init
 
 //(Frontend)
 //npm create vite@latest
